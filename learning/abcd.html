@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>BOX-EXAMPLE</title>
+ </head>
+ <style>
+
+#second{border-style: solid;
+background: white}
+ #first {
+    width: 400px;
+    height: 400px;
+    background: #ffff80;
+    position: left
+}
+#second {
+  position: absolute;
+  left: 450px;
+  top: 450px;
+}
+
+ #second {
+
+    width: 50px;
+    height: 50px;
+    background: grey;
+}
+
+
+}
+</style>
+<script>
+
+
+function play()
+{
+
+var pos=document.getElementById("second");
+pos.style.color="red";
+
+var tid = setInterval(function(){
+var top=pos.style.top;
+var left=pos.style.left;
+top=top-10;
+pos.style.top=top+"px";
+
+tp=parseInt(top);
+//for(i=400;i>0;i-50){
+//while(true)
+{
+	alert("I am setInterval");
+}
+  
+},10);
+
+
+}
+
+</script> 
+ <body border="1">
+    <div id="first">
+      <div id="second"></div>
+     </div>
+<div></div>
+ <button id="play" onclick="play()">play</button>
+ <button id="pause" onclick="pause()">pause</button>
+
+ </body>
+</html>
